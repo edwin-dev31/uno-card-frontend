@@ -1,0 +1,14 @@
+# Node modules
+node_modules/
+# Archivos de entorno
+.env
+# Logs
+logs/
+# Cobertura de codigo
+coverage/
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+# Resultados de pruebas ( si se usan herramientas como Jest o
+,→ Mocha )
+test-results/
