@@ -1,0 +1,35 @@
+/* comentado mientras actualizo el backend
+export const apiRoutes = {
+  login: "/auth/login",
+  register: "/auth/register",
+  logout: "/auth/logout",
+  createGame: "/game",
+  joinGame: "/player-game/join",
+  game: (gameId) => `/game/${gameId}`,
+  status: (gameId) => `/game/${gameId}/state`,
+  topCard: (gameId) => `/game/${gameId}/top-card`,
+  ownCard: (gameId) => `/game/${gameId}/player/own-card`,
+  nextTurn: (gameId) => `/game/${gameId}/next-turn`,
+  currentPlayer: (gameId) => `/game/${gameId}/current-player`,
+  playCard: (gameId) => `/game/${gameId}/card/play`,
+  drawCard: (gameId) => `/game/${gameId}/card/draw`,
+};*/
+
+export const apiRoutes = {
+  login: "/auth/login",
+  register: "/auth/register",
+  logout: "/auth/logout",
+  createGame: "/game",
+  joinGame: "/player-game/join",
+  game: (gameId) => `/game/1`,
+  status: (gameId) => `/game/1/state`,
+  topCard: (gameId) => `/game/1/top-card`,
+  ownCard: (gameId) => `/game/1/player/own-card`,
+  nextTurn: (gameId) => `/game/1/next-turn`,
+  currentPlayer: (gameId) => `/game/1/current-player`,
+  playCard: (gameId) => `/game/1/card/play`,
+  drawCard: (gameId) => `/game/1/card/draw`,
+  leaveGame: (gameId) => `/game/1/leave`,
+  startGame: (gameId) => `/game/${gameId}/start`,
+  dealCards: "/card/deal",
+};

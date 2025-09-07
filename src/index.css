@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 222 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --radius: 0.5rem;
+  }
+}
+
+body {
+  @apply bg-slate-900 text-white min-h-screen;
+  font-family: "Inter", sans-serif;
+  background-image: url("https://horizons-cdn.hostinger.com/2b095a99-5594-4402-83a6-67896d1fda0c/0c868038fb57375a024847e62a2254e0.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  filter: saturate(1.5) contrast(1.2);
+}
+
+.uno-card {
+  @apply relative w-24 h-36 rounded-xl border-2 border-white/20 shadow-2xl transform transition-all duration-300 bg-cover bg-center;
+}
+
+.uno-card-red {
+  background-image: url("https://horizons-cdn.hostinger.com/2b095a99-5594-4402-83a6-67896d1fda0c/7bde1e5c57e84efc06bae7b476622216.png");
+}
+
+.uno-card-blue {
+  background-image: url("https://horizons-cdn.hostinger.com/2b095a99-5594-4402-83a6-67896d1fda0c/55a26d6c04a20a797b0f8031fa435ac7.png");
+}
+
+.uno-card-green {
+  background-image: url("https://horizons-cdn.hostinger.com/2b095a99-5594-4402-83a6-67896d1fda0c/dbb3dc7fd8aea0acf026159225b124b1.png");
+}
+
+.uno-card-yellow {
+  background-image: url("https://horizons-cdn.hostinger.com/2b095a99-5594-4402-83a6-67896d1fda0c/155be1970f755d97d0f3acd67f8f6039.png");
+}
+
+.uno-card-wild {
+  background-image: linear-gradient(145deg, #1f2937, #111827);
+}
+
+.uno-card-deck {
+  background-image: url("https://horizons-cdn.hostinger.com/2b095a99-5594-4402-83a6-67896d1fda0c/06aa64f50617eafe0449bbbba89851de.png");
+}
+
+.game-table {
+  @apply w-[450px] h-[450px] rounded-full relative flex items-center justify-center;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(15, 23, 42, 0.8) 0%,
+    rgba(15, 23, 42, 0.95) 70%,
+    #0c1221 100%
+  );
+  border: 4px solid #4f46e5;
+  box-shadow: inset 0 0 80px rgba(79, 70, 229, 0.3),
+    0 0 40px rgba(79, 70, 229, 0.5);
+}
+
+.card-glow {
+  box-shadow: 0 0 25px rgba(250, 204, 21, 0.7);
+}
+
+.pulse-animation {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(1.05);
+  }
+}
